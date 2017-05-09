@@ -1,5 +1,5 @@
 # APK-Modifier
-APK 动态修改工具，可用于渠道包标记等
+APK 动态修改工具，可用于渠道包标记等... [More detail plz check blog here](https://frendyxzc.github.io/android/2017/04/19/apk-modifier.html)
 
 <br>
 
@@ -16,5 +16,10 @@ java -jar ApkModifier.jar test.apk data.txt
 2. 读取数据。在 App 端导入 iimedia_apk_modifier_1.0.0.jar，在需要获取数据的地方通过以下方法获取：
 ```
 String data_insert = ApkModifier.getData(mContext);
+```
+
+3. 如需要批量写入，可参考批处理脚本 modifier.bat，最终安装包生成在 batoutputs 文件夹下：
+```
+modifier.bat test.apk
 ```
 <br>
